@@ -21,9 +21,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '(5%8p#(we#2@&wxd0k)k^ufr-heih-js*@c+l4+v_e4+94qdjc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['akikatest.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
@@ -40,11 +40,13 @@ INSTALLED_APPS = [
     'akikaapp',
     'bootstrap3',
     'channels',
-       'django_seo_js',
+    'django_seo_js',
 
 
 ]
 SEO_JS_PRERENDER_TOKEN = "123456789abcdefghijkl"  # Really, put this in your env, not your codebase.
+
+
 
 
 
