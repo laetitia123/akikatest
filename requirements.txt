@@ -19,13 +19,13 @@ hyperlink==20.0.1
 idna==2.10
 importlib-metadata==1.7.0
 incremental==17.5.0
-pkg-resources==0.0.0
 psycopg2==2.8.6
 pyasn1==0.4.8
 pyasn1-modules==0.2.8
 pycparser==2.20
 PyHamcrest==2.0.2
 pyOpenSSL==19.1.0
+python-decouple==3.3
 pytz==2020.4
 requests==2.25.0
 service-identity==18.1.0
