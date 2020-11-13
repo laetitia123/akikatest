@@ -24,12 +24,10 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 if config('MODE')=="dev":
    DATABASES = {
        'default': {
-           'ENGINE': 'django.db.backends.postgresql_psycopg2',
-            # 'ENGINE': 'django.db.backends.postgresql',
+           'ENGINE': 'django.db.backends.postgresql',
            'NAME': 'akika',
            'USER': 'laetitia',
            'PASSWORD': 'cool',
-           'PORT': '',
        }
        
    }
