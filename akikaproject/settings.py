@@ -23,7 +23,7 @@ SECRET_KEY = '(5%8p#(we#2@&wxd0k)k^ufr-heih-js*@c+l4+v_e4+94qdjc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['akikatest.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
