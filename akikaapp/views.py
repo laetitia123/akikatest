@@ -13,13 +13,12 @@ from .email import send_welcome_email
 from django.apps import apps
 
 from .models import *
-from django.contrib.auth.decorators import login_required
+# from django.contrib.auth.decorators import login_required
 
 
 # Create your views here.
 
 
-@login_required
 def covid_19(request):
     date = dt.date.today()
     news = Akika.todays_news()
