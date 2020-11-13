@@ -45,7 +45,6 @@ DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
-# raise UndefinedValueError('{} not found. Declare it as envvar or define a default value.'.format(option))
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -55,7 +54,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '(5%8p#(we#2@&wxd0k)k^ufr-heih-js*@c+l4+v_e4+94qdjc'
+# SECRET_KEY = '(5%8p#(we#2@&wxd0k)k^ufr-heih-js*@c+l4+v_e4+94qdjc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -86,6 +85,7 @@ SEO_JS_PRERENDER_TOKEN = "123456789abcdefghijkl"  # Really, put this in your env
 SEO_FOR_MODELS = [
     'app.models.Article',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
