@@ -1,0 +1,152 @@
+{% extends "registration/base.html"%}
+{% load bootstrap3 %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>covid-19</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+  <meta name="description" content="A good summary about your page.">
+
+  <!-- Favicons -->
+  <link href="../static/img/clients/logo.svg" rel="icon">
+  <link href="../static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="../static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="../static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="../static/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="../static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="../static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="../static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Rapid
+    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+
+
+
+    <div class="container">
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <h1 class="text-light"><a href="home.html" class="scrollto"><img src="../static/img/clients/logo.svg"
+              font-size="400"></a></h1>
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="{% url 'akikaapp:home' %}">Home</a></li>
+          <li><a href="home.html">About Us</a></li>
+          <li><a href="home.html">prevention</a></li>
+          <li><a href="home.html">FAQs</a></li>
+          <li><a href="home.html">news</a></li>
+          <li><a href="home.html">Doctors</a></li>
+          <li class="drop-down"><a href="">Drop Down</a>
+
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+  <div style="display: flex;flex-direction: row; padding-left: 100px;margin-top:100px">
+    <div
+      style="height:600px;background-image: url(https://i.pinimg.com/originals/77/5e/7a/775e7ada2517e1fa49e58302c1fa6596.jpg);margin-left: 200px; width:300px;color:blanchedalmond;font-family: 'Philosopher', sans-serif">
+      <div style="padding-top: 160px;text-align: center">
+        <img src="https://gameo.io/static/images/dashboard/profile.6bcc1092ab3a.png" height="100px">
+        <h3 style="font-weight: bold;padding-top: 15px">Hello, Friend!</h3>
+        <p>Enter your personal details </br>and start journey with us.</p>
+      </div>
+    </div>
+    <div>
+      <div class="col-md-12"
+        style="height:600px;box-shadow: 5px 1px 5px 1px #888888;font-family: 'Philosopher', sans-serif;width:400px">
+        <h3 style="margin-left:10px;font-size:23px;margin-top:40px;font-weight:bold;color:#413e66">CREATE ACCOUNT</h3>
+        <form method="post" style="color:#413e66 ;font-size:20px;margin-left:30px">
+          {% csrf_token %}
+          <p></p> {% for field in form %}
+          <p>
+            {{ field.label_tag }}<br>
+            {{ field }}
+          <p style="background-color: aqua;">{% if field.help_text %}</p>
+          <small style="display: none">{{ field.help_text }}</small>
+          {% endif %}
+          {% for error in field.errors %}
+          <p style="color: red">{{ error }}</p>
+          {% endfor %}
+
+          {% endfor %}
+
+          <button class="btn btn-outline-info" type="submit" style="font-size:18px">Sign up</button>
+
+        </form>
+      </div>
+
+    </div>
+  </div>
+  <script src="static/lib/jquery/jquery.min.js"></script>
+  <script src="static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/lib/easing/easing.min.js"></script>
+  <script src="static/lib/mobile-nav/mobile-nav.js"></script>
+  <script src="static/lib/wow/wow.min.js"></script>
+  <script src="static/lib/waypoints/waypoints.min.js"></script>
+  <script src="static/lib/counterup/counterup.min.js"></script>
+  <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="static/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="static/lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
+{% endblock %}

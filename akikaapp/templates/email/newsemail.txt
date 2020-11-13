@@ -1,0 +1,3 @@
+Hello {{name}}
+
+Welcome to  covid-19  web newsletter You will find the most exciting news about covid-19

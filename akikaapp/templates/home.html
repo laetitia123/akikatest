@@ -1,0 +1,957 @@
+<!-- {% extends 'base.html' %} -->
+{% load static%}
+{% load bootstrap3 %}
+
+
+{% block content %}
+
+
+<!DOCTYPE html>
+<html lang="en">
+{% load django_seo_js %}
+
+<head>
+  {% seo_js_head %}
+
+  <meta charset="utf-8">
+  <title>covid-19</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Coronavirus" name="keywords">
+  <meta name="description" content="An ongoing worldwide pandemic of coronavirus disease 2019 (COVID-19), a novel
+  infectious disease caused ">
+
+  <!-- Favicons -->
+  <link href="static/img/clients/logo.svg" rel="icon">
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700"
+    rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="static/lib/animate/animate.min.css" rel="stylesheet">
+  <link href="static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="static/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Rapid
+    Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" style="background-color:white;">
+
+
+    <div id="topbar" style="margin-top:-20;background-color:rgb(24, 136, 136);height: 50px;">
+      <div class="container">
+        <div style="float:left;margin-top: 15px;">
+          <a href="" style="font-size:16px"><i class="fa fa-envelope"
+              style="color:white;">knowcovid-19@gmail.com</i></a>
+          <a href=""><i class="fa fa-phone" style="color:white;">+2570896747</i></a>
+
+        </div>
+        <div class="social-links">
+          <a href="#" class="twitter" style="margin-top:10px;"><i class="fa fa-twitter" style="color:white"></i></a>
+          <a href=" #" class="facebook"><i class="fa fa-facebook " style="color:white"></i></a>
+          <a href="#" class="linkedin"><i class="fa fa-linkedin" style="color:white"></i></a>
+          <a href="#" class="instagram"><i class="fa fa-instagram" style="color:white"></i></a>
+
+          <a class='btn btn-default' style="font-size:18px;color:white" href="{% url 'akikaapp:chat' %}">chat</a>
+
+          <a class='btn btn-default' style="font-size:18px;color:white" href="{% url 'akikaapp:login' %}">login</a>
+          <a class='btn btn-default' style="font-size:18px;color:white" href="{% url 'akikaapp:signup' %}">Register</a>
+          <!-- <a class='btn btn-default'style="font-size:18px;" href="/logout">Logout</a> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <a href="#intro"><img src="static/img/clients/logo.svg" style="width:200px"></a>
+
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+
+        <!-- <a href="#header" class="scrollto"><img src="img/logo.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="#intro">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#services">prevention</a></li>
+          <li class="drop-down"><a href="#news">News</a>
+
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="navbare.html">news</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#faq">FAQs</a></li>
+          <!-- <li><a href="#news">news</a></li> -->
+          <li><a href="#team">Doctors</a></li>
+
+        </ul>
+      </nav><!-- .main-nav -->
+
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container d-flex h-100">
+      <div class="row justify-content-center align-self-center">
+        <div class="col-md-6 intro-info order-md-first order-last">
+          <h2><br>STAY HOME <span>STAY SAFE</span></h2>
+          <div>
+            <a href="#about" class="btn btn-outline-info">Get Started</a>
+          </div>
+        </div>
+
+        <div class="col-md-6 intro-img order-md-last order-first">
+          <img src="static/img/number-removebg-preview.png" width="700" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    </div>
+  </section><!-- #intro -->
+
+  <main id="main">
+
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-5 col-md-6">
+            <div class="about-img">
+              <img src="static/img/doctor.jpg" height="450" alt="">
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-6">
+            <div class="about-content">
+              <h2>About Covid-19</h2>
+              <!-- <h3>Odio sed id eos et laboriosam consequatur eos earum soluta.</h3> -->
+              <p style="font-size:18px">An ongoing worldwide pandemic of coronavirus disease 2019 (COVID-19), a novel
+                infectious disease caused
+                by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was first confirmed to have spread to
+                Italy on 31 January 2020,
+                when two Chinese tourists in Rome tested positive for the virus.</p>
+              <ul style="font-size:18px">
+                <li><i class="ion-android-checkmark-circle"
+                    style="font-size: 30px;padding-right:10px;color: #f27939;"></i>COVID-19 is the disease caused by
+                  the new coronavirus
+                  that emerged in China in December 2019.</li>
+                <li><i class="ion-android-checkmark-circle"
+                    style="font-size: 30px;padding-right:10px;color: #f27939;"></i>At this time, there are no specific
+                  vaccines for
+                  COVID-19.</li>
+                <li><i class="ion-android-checkmark-circle"
+                    style="font-size: 30px;padding-right:10px;color: #f27939;"></i> However, there are many ongoing
+                  clinical trials
+                  evaluating potential treatments.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- #about -->
+
+
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Prevention</h3>
+          <p style="font-size:18px">You can protect yourself and help prevent spreading the virus
+            to others if you:</p>
+        </header>
+
+        <div class="row">
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fceef3;"><i style="color: #ff689b;"><img
+                    src="static/img/hands-washing.svg"></i></div>
+              <h4 class="title"><a href="">Wash your hands frequently</a></h4>
+              <p class="description">It is recommended to wash your hands with antibacterial soap for at least 20
+                seconds.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #fff0da;"><i style="color: #e98e06;"><img
+                    src="static/img/avoid-contact.svg"></i></div>
+              <h4 class="title"><a href="">Avoid close contact</a></h4>
+              <p class="description">Avoiding any direct contact allows you to increase your protection from the emerged
+                COVID-19 virus.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #e6fdfc;"><i style="color: #3fcdc7;"><img
+                    src="static/img/home-stay.svg"></i></div>
+              <h4 class="title"><a href="">Stay at home</a></h4>
+              <p class="description">Practice social distancing and don’t leave your your home without any urgent need
+                to stay safe.</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #eafde7;"><i style="color:#41cf2e;"><img
+                    src="static/img/mask-wearing.svg"></i></div>
+              <h4 class="title"><a href="">Wear a mask </a></h4>
+              <p class="description" style="font-size:18px;"> A face mask is a must if you have symptoms of cold, flu,
+                COVID-19 or other viruses
+                and infections.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box" style="font-size:18px;">
+              <div class="icon" style="background: #e1eeff;"><i style="color: #2282ff;"><img
+                    src="static/img/cleaning-door.svg"></i></div>
+              <h4 class="title"><a href="">If surfaces are dirty, clean them</a></h4>
+              <p class="description">If surfaces are dirty, clean them.Touching objects that have sneeze droplets</p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon" style="background: #ecebff;"><i style="color: #8660fe;"><img
+                    src="static/img/anticeptigc.jpeg"></i></div>
+              <h4 class="title"><a href="">Use antiseptic regularly</a></h4>
+              <p class="description">Use antiseptic regularly to clean your hands </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #services -->
+
+    <!--==========================
+      Why Us Section
+    ============================-->
+    <section id="why-us" class="wow fadeIn">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6">
+            <header class="section-header">
+              <h3>what are they and should I call the doctor?</h3>
+            </header>
+
+          </div>
+          <br><br><br><br>
+          <div class="col-sm-6"></div>
+        </div>
+        <div class="row">
+
+
+          <div class="col-lg-6">
+
+
+            <div class="why-us-content">
+              <p style="font-size:18px;margin-top: 40px;">
+                It is caused by a member of the coronavirus family that has never
+                been encountered before. Like other coronaviruses, it has transferred to humans from animals.
+              </p>
+              <p style="font-size:18px"> According to the WHO, the most common symptoms of Covid-19 are fever, tiredness
+                and a dry cough. Some
+                patients may also have a runny nose, sore throat, nasal congestion and aches and pains or diarrhoea.
+              </p>
+
+              <div class="features wow bounceInUp clearfix">
+                <img src="static/img/symptom.png" style="width:350px;margin-top:-90px">
+              </div>
+
+              <!-- <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-object-group" style="color: #ffb774;"></i>
+                <h4>Eum ut aspernatur</h4>
+                <p>Molestias eius rerum iusto voluptas et ab cupiditate aut enim. Assumenda animi occaecati. Quo dolore fuga quasi autem aliquid ipsum odit. Perferendis doloremque iure nulla aut.</p>
+              </div> -->
+
+              <!-- <div class="features wow bounceInUp clearfix">
+                <i class="fa fa-language" style="color: #589af1;"></i>
+                <h4>Voluptates dolores</h4>
+                <p>Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur. Totam dolores ut enim ullam voluptas distinctio aut.</p>
+              </div> -->
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <div class="why-us-img">
+              <img src="static/img/call-doctor-removebg-preview.jpg" height="500" alt="" class="img-fluid">
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </section>
+
+
+    <!--==========================
+      Features Section
+    ============================-->
+    <!-- <section id="features"> -->
+    <!-- <div class="container"> -->
+
+    <!-- <div class="row feature-item">
+          <div class="col-lg-6 wow fadeInUp">
+            <img src="static/img/features-1.svg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 wow fadeInUp pt-5 pt-lg-0">
+            <h4>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h4>
+            <p>
+              Ipsum in aspernatur ut possimus sint. Quia omnis est occaecati possimus ea. Quas molestiae perspiciatis occaecati qui rerum. Deleniti quod porro sed quisquam saepe. Numquam mollitia recusandae non ad at et a.
+            </p>
+            <p>
+              Ad vitae recusandae odit possimus. Quaerat cum ipsum corrupti. Odit qui asperiores ea corporis deserunt veritatis quidem expedita perferendis. Qui rerum eligendi ex doloribus quia sit. Porro rerum eum eum.
+            </p>
+          </div>
+        </div> -->
+
+    <!-- <div class="row feature-item mt-5 pt-5">
+          <div class="col-lg-6 wow fadeInUp order-1 order-lg-2">
+            <img src="static/img/doctor.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1" style="margin-top:100px">
+            <header class="section-header">
+              <h3>How Virus Spreads</h3>
+            </header>
+            <p>
+              Though COVID-19 is thought to spread mainly from person to person, we are still learning how it spreads.
+              The virus spreads through:
+            </p>
+            <div class="features wow bounceInUp clearfix">
+              <i></i>
+              <p><img src="static/img/tick.jpeg" style="width:30px;">From a close contact with an infected person</p>
+            </div>
+
+            <div class="features wow bounceInUp clearfix">
+              <p><img src="static/img/tick.jpeg" style="width:30px;">Droplets from infected person’s cough or sneeze</p>
+            </div>
+            <div class="features wow bounceInUp clearfix">
+              <p><img src="static/img/tick.jpeg" style="width:30px;">Touching objects that have sneeze droplets</p>
+            </div>
+          </div>
+
+        </div> -->
+
+    <!-- </div> -->
+    <!-- </section> -->
+    <!-- #about -->
+
+    <!--==========================
+      Pricing Section
+    ============================-->
+    <section id="pricing" class="wow fadeInUp section-bg">
+
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Transmission of (COVID-19)</h3>
+          <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+        </header>
+
+        <div class="row flex-items-xs-middle flex-items-xs-center">
+
+          <!-- Basic Plan  -->
+          <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <div class="card-header" style="margin-top:0">
+                <h3><img src="static/img/contact.svg" style="width:60px"></h3>
+
+              </div>
+              <div class="card-block">
+                <h4 class="card-title" style="font-weight:500;">
+                  Human Contact </h4>
+                <p>Odio animi voluptates Odio animi voluptatesOdio animi
+                  voluptatesOdio animi voluptatesOdio animi voluptates</p>
+                <!-- <a href="#" class="btn">Choose Plan</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Regular Plan  -->
+          <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <div class="card-header">
+                <h3><img src="static/img/air.svg" style="width:50px"></h3>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title" style="font-weight:500;">
+                  Air Transmission </h4>
+                <p>Odio animi voluptates Odio animi voluptatesOdio animi
+                  voluptatesOdio animi voluptatesOdio animi voluptates</p>
+
+                <!-- <a href="#" class="btn">Choose Plan</a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Plan  -->
+          <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <div class="card-header">
+                <h3><img src="static/img/contamined.svg" style="width:50px"></h3>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title" style="font-weight:500;">
+                  Contaminated </h4>
+                <p>Odio animi voluptates Odio animi voluptatesOdio animi
+                  voluptatesOdio animi voluptatesOdio animi voluptates</p>
+                <!-- <a href="#" class="btn">Choose Plan</a> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- #pricing -->
+    <!--==========================
+      Frequently Asked Questions Section
+    ============================-->
+    <section id="faq">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-lg-5" style="margin-top:10px">
+            <img src="static/img/asked-removebg-preview.jpg" width="403" height="575">
+            <img src="static/img/anticeptic-removebg-preview-removebg-preview.png" width="103" height="106"
+              style="margin-left:350px;margin-top:-150px;">
+
+            <spam stye="font-size:50px;color:black">::::
+              :::
+            </spam>
+
+
+          </div>
+          <div class="col-lg-7">
+            <header class="section-header">
+              <h3 style="color:#f27939;font-size:34px;font-weight:bold">Frequently Asked </h3>
+              <h3>Question</h3>
+            </header>
+
+            <ul id="faq-list" class="wow fadeInUp" style="width:500px;margin-left:80px;">
+              <li>
+                <a data-toggle="collapse" class="collapsed" href="#faq1" style="font-family: fivo sans modern,sans-serif;border: 1px solid #dadada;
+                background-color:  #f3efef;padding:20;margin-bottom: 20px;">
+                  How does covid-19 spread? <i class="ion-android-remove" style="padding-right:20"></i></a>
+                <div id="faq1" class="collapse" data-parent="#faq-list">
+
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq2" class="collapsed" style="font-family: fivo sans modern,sans-serif;border: 1px solid #dadada;
+                  background-color:  #f3efef;padding:20;margin-bottom: 20px;font-weight:500">What are The Symptom of
+                  Covid-19? <i class="ion-android-remove" style="margin-right: 20px;"></i></a>
+                <div id="faq2" class="collapse" data-parent="#faq-list">
+
+                  <p>The most common symptoms
+                    of COVID-19 are fever, tiredness, and dry cough.
+                    Some patients may have aches and pains, nasal congestion, runny nose, sore throat or diarrhea.
+                    These symptoms are usually mild and begin gradually. Some people become infected
+                    but don’t develop any symptoms and don't feel unwell. Most people (about 80%)
+                    recover from the disease without needing special treatment. Around 1 out of every 6 people who
+                    gets COVID-19 becomes seriously ill and develops difficulty breathing. Older people,
+                    and those with underlying medical problems like high blood pressure, heart problems or diabetes,
+                    are more likely to develop serious illness.
+                    People with fever, cough and difficulty breathing should seek medical attention.</p>
+                  </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq3" class="collapsed" style="font-family: fivo sans modern,sans-serif;border: 1px solid #dadada;
+                background-color:  #f3efef;padding:20;margin-bottom: 20px;">
+                  Who is at lisk of developing severe illness
+                  quickly? <i class="ion-android-remove" style="margin-right:20px"></i></a>
+                <div id="faq3" class="collapse" data-parent="#faq-list">
+                  <p>
+                    While we are still learning about how COVID-2019 affects people, older persons and persons with
+                    pre-existing medical conditions (such as high blood pressure, heart disease,
+                    lung disease, cancer or diabetes) appear to develop serious illness more often than others. </p>
+                </div>
+              </li>
+
+              <li>
+                <a data-toggle="collapse" href="#faq4" class="collapsed" style="font-family: fivo sans modern,sans-serif;border: 1px solid #dadada;
+                background-color:  #f3efef;padding:20;margin-bottom: 20px;">
+                  Are antibiotics effective in treating COVID-19?
+                  <i class="ion-android-remove" style="margin-right:20px"></i></a>
+                <div id="faq4" class="collapse" data-parent="#faq-list">
+                  <p>
+
+                    No. Antibiotics do not work against viruses, they only work on bacterial infections. COVID-19 is
+                    caused by a virus, so antibiotics do not work. Antibiotics should not be used as a means of
+                    prevention or treatment of COVID-19. They should only be used as directed by a physician to treat a
+                    bacterial infection.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <a data-toggle="collapse" href="#faq5" class="collapsed" style="font-family: fivo sans modern,sans-serif;border: 1px solid #dadada;
+                background-color:  #f3efef;padding:20;margin-bottom: 20px;">
+                  Can a person test negative and later test
+                  positive for COVID-19? <i class="ion-android-remove" style="margin-right:20px"></i></a>
+                <div id="faq5" class="collapse" data-parent="#faq-list">
+
+                  <p> Using the CDC-developed diagnostic test, a negative result means that the virus that causes
+                    COVID-19
+                    was not found in the person’s sample. In the early stages of infection, it is possible the virus
+                    will not be detected.
+
+                    For COVID-19, a negative test result for a sample collected while a person has symptoms likely means
+                    that the COVID-19 virus is not causing their current illness.
+                  </p>
+                </div>
+              </li>
+
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </section><!-- #faq -->
+
+
+    <!--==========================
+      Team Section
+    ============================-->
+    <section id="team" class="section-bg">
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-8">
+            <header class="section-header">
+              <h3 style="margin-left:-200px;">Meate Our Doctors</h3>
+
+            </header>
+            <p style=font-size:18px;width:600px;margin-left:50px>An ongoing worldwide pandemic of coronavirus disease
+              2019
+              (COVID-19),
+              a novel
+              infectious disease caused by
+              severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2), was first confirmed to have spread to
+              Italy on
+              31 January 2020, when two Chinese tourists in Rome tested positive for the virus.</p>
+          </div>
+          <div class="col-sm-4"></div>
+
+        </div>
+
+
+
+        <div class="row" style="margin-top:100px;">
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp">
+            <div class="member">
+              <img src="static/img/doctor1.jpg" height="320" widht="300" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Walter White</h4>
+                  <!-- <span>Chief Executive Officer</span> -->
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="member">
+              <img src="static/img/doctor3.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Sarah Jhonson</h4>
+                  <!-- <span>Product Manager</span> -->
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
+            <div class="member">
+              <img src="static/img/doctor4.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>William Anderson</h4>
+                  <!-- <span>CTO</span> -->
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="member">
+              <img src="static/img/doctor2.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Amanda Jepson</h4>
+                  <!-- <span>Accountant</span> -->
+                  <div class="social">
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-google-plus"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- #team -->
+
+    <!--==========================
+      Clients Section
+    ============================-->
+    <section id="clients" class="wow fadeInUp">
+      <div class="container">
+
+        <header class="section-header">
+          <h3>Why do I need wash hand</h3>
+          <p>Protect yourself and others against infections</p>
+        </header>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2">
+              <img src="static/img/apply-soap.svg" alt=""><br>
+              <p> Apply soap</p>
+            </div>
+            <div class="col-sm-2">
+              <img src="static/img/rub-hands.svg" alt="">
+              <p> Rub Hands</p>
+            </div>
+            <div class="col-sm-2">
+              <img src="static/img/BetweenFingers.svg" alt="">
+              <p>Between Fingers</p>
+            </div>
+            <div class="col-sm-2">
+              <img src="static/img/back.svg" alt="">
+              <p>Back to Hands</p>
+            </div>
+            <div class="col-sm-2">
+              <img src="static/img/clean .svg" alt="">
+              <p> Clean Thumbs</p>
+            </div>
+            <div class="col-sm-2">
+              <img src="static/img/Towel.svg" alt="">
+              <p>Use Tow</p>
+            </div>
+            <!-- <div class="col-sm-2">
+          <img src="static/img/clients/Towel.svg" alt="">
+          </div> -->
+            <!-- <img src="static/img/clients/client-8.png" alt=""> -->
+          </div>
+
+        </div>
+    </section><!-- #clients -->
+
+    <!--==========================
+    news
+    ============================-->
+    <section id="pricing" class="wow fadeInUp section-bg">
+
+      <div class="container" id="news">
+
+        <header class="section-header">
+          <h3>News About (COVID-19)</h3>
+          <!-- <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p> -->
+        </header>
+
+        <div class="row flex-items-xs-middle flex-items-xs-center">
+
+          <!-- Basic Plan  -->
+          <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <div class="card-header">
+                <h3><img src="static/img/news1.jpg" style="width:200px"></h3>
+
+              </div>
+              <div class="card-block">
+                <h4 class="card-title" style="font-weight: bold;"> Economic Policies for the COVID-19 War</h4>
+                <p style="padding-left:30px;padding-right:30px;">The COVID-19 pandemic is a crisis like no other. It
+                  feels like a war, and in many ways it is.</p>
+
+                <a href="#" class="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Regular Plan  -->
+          <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <div class="card-header">
+                <h3><img src="static/img/news2.jpg" style="width:200px"></h3>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title" style="font-weight: bold;">Coronavirus at Record High</h4>
+                <p style="padding-left:30px;padding-right:30px;">The coronavirus continues to spread. As more countries
+                  impose quarantines and social distancing.</p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Premium Plan  -->
+          <div class="col-xs-12 col-sm-4">
+            <div class="card">
+              <div class="card-header">
+                <h3><img src="static/img/news3.jpg" style="width:200px"></h3>
+              </div>
+              <div class="card-block">
+                <h4 class="card-title" style="font-weight: bold;">Maintaining Banking System Safety amid the COVID-19
+                  Crisis</h4>
+                <p style="padding-left:30px;padding-right:30px;">Today we face economic upheaval potentially more severe
+                  .</p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </section><!-- #pricing -->
+
+    <section id="why-us" class="wow fadeIn">
+
+      <div class="container" style="background:url(../static/img/number.jpg);">
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">940,735</span>
+            <p style="font-size:25px;font-weight:bold">Total Cases</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">47,518</span>
+            <p style="font-size:25px;font-weight:bold">Total Deaths</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">196,221</span>
+            <p style="font-size:25px;font-weight:bold">Total Recovered</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">696,996</span>
+            <p style="font-size:25px;font-weight:bold;color:black">Active Cases</p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer" class="section-bg" style="margin-top:100px;">
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+
+              <div class="col-sm-6">
+
+                <div class="footer-info">
+                  <img src="static/img/clients/logo.svg" font-size="400">
+                  <p>Get the latest news and updates about the newly emerged coronavirus from a teamof medical experts.
+                  </p>
+                </div>
+
+                <div class="social-links">
+                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                  <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                </div>
+
+              </div>
+
+              <div class="col-sm-6">
+                <div class="footer-links">
+                  <h4>Useful Links</h4>
+                  <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                  </ul>
+                </div>
+
+
+
+
+              </div>
+
+
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="footer-links">
+                  <h4>Contact Us</h4>
+                  <p>
+                    A108 Adam Street <br>
+                    New York, NY 535022<br>
+                    United States <br>
+                    <strong>Phone:</strong> +1 5589 55488 55<br>
+                    <strong>Email:</strong> info@example.com<br>
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6">
+
+
+                <div class="footer-newsletter">
+                  <h4>Our Newsletter</h4>
+                  <p>Coronavirus disease (COVID-19) is an infectious disease caused by a new virus.
+                    The disease causes respiratory illness (like the flu).</p>
+                  <!-- <form action="" method="post">
+                <input type="email" name="email"><input type="submit"  value="Subscribe">
+              </form> -->
+
+                  <form action="{%url 'akikaapp:home'%}" method="post">
+                    {%csrf_token%}
+
+                    {% bootstrap_form letterForm layout='inline' %}
+                    <input type="submit" value="Subscribe">
+                  </form>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Covid-19</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Rapid
+        -->
+        Designed by <a href="https://bootstrapmade.com/">Laetitia</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <!-- <div id="preloader"></div> -->
+
+  <!-- JavaScript Libraries -->
+
+  <!-- JavaScript Libraries -->
+  <script src="static/lib/jquery/jquery.min.js"></script>
+  <script src="static/lib/jquery/jquery-migrate.min.js"></script>
+  <script src="static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/lib/easing/easing.min.js"></script>
+  <script src="static/lib/mobile-nav/mobile-nav.js"></script>
+  <script src="static/lib/wow/wow.min.js"></script>
+  <script src="static/lib/waypoints/waypoints.min.js"></script>
+  <script src="static/lib/counterup/counterup.min.js"></script>
+  <script src="static/lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="static/lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="static/lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="static/js/main.js"></script>
+  <script src="//code.tidio.co/qgozc9slf2txtpwm1hzrmjhniebpusxc.js" async></script>
+
+</body>
+
+</html>
+{% endblock %}
