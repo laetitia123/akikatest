@@ -1,1 +1,1 @@
-web: gunicorn akika.wsgi --log-file -
+web: gunicorn akikaproject.wsgi --log-file -

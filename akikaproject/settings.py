@@ -17,6 +17,7 @@ import django_heroku
 import dj_database_url
 from decouple import config,Csv
 
+
 MODE=config("MODE", default="dev")
 SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=False, cast=bool)
@@ -44,9 +45,7 @@ DATABASES['default'].update(db_from_env)
 
 ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
-
-
-
+    raise UndefinedValueError('{} not found. Declare it as envvar or define a default value.'.format(option))
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
