@@ -16,6 +16,7 @@ import os
 import django_heroku
 import dj_database_url
 from decouple import config,Csv
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 MODE=config("MODE", default="dev")
@@ -25,11 +26,15 @@ DEBUG = config('DEBUG', default=False, cast=bool)
 if config('MODE')=="dev":
    DATABASES = {
        'default': {
-           'ENGINE': 'django.db.backends.postgresql',
-           'NAME': 'akika',
-           'USER': 'laetitia',
-           'PASSWORD': 'cool',
+           'ENGINE': 'django.db.backends.postgresql_psycopg2',
+           'NAME': config('DB_NAME'),
+           'USER': config('DB_USER'),
+           'PASSWORD': config('DB_PASSWORD'),
+        #  'HOST': config('DB_HOST'),
+        #  'PORT': '',
        }
+       
+   }
        
    }
 # production
@@ -48,7 +53,6 @@ ALLOWED_HOSTS = config('ALLOWED_HOSTS', cast=Csv())
 
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
@@ -206,16 +210,17 @@ STATICFILES_DIRS = [
 
 
 LOGIN_REDIRECT_URL = "home"
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'uwizelaetitia@gmail.com'
-EMAIL_HOST_PASSWORD = 'takecare1'  # This is not your gmail password.
-EMAIL_USE_TLS = True
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = 'uwizelaetitia@gmail.com'
+# EMAIL_HOST_PASSWORD = 'takecare1'  
+# This is not your gmail password.
+# EMAIL_USE_TLS = True
 
 # Simplified static file serving.
 # https://warehouse.python.org/project/whitenoise/
