@@ -52,7 +52,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '(5%8p#(we#2@&wxd0k)k^ufr-heih-js*@c+l4+v_e4+94qdjc'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG =True
 
 ALLOWED_HOSTS = ['*']
 
@@ -137,14 +137,14 @@ CHANNEL_LAYERS = {
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'akika',
-#         'USER': 'laetitia',
-#         'PASSWORD': 'cool',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'akika',
+        'USER': 'laetitia',
+        'PASSWORD': 'cool',
+    }
+}
 
 
 # Password validation
