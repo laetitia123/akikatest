@@ -1058,7 +1058,6 @@ h6 {
   border-radius: 0px;
   box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
   transition: all .3s ease-in-out;
-  padding: 36px 0;
   position: relative;
 }
 
@@ -1096,7 +1095,6 @@ h6 {
 }
 .card-block p{
   margin-bottom: 20px;
-  /* margin-right: 20px; */
 
 }
 
@@ -1104,7 +1102,6 @@ h6 {
 #pricing .card .card-block {
   
   margin-bottom: 20px;
-  /* margin-right: 20px; */
 }
 
 #pricing .card .list-group-item {
