@@ -1505,6 +1505,7 @@ transition: all .2s ease-in-out;
 
   #pricing .card {
     margin-bottom: 50px;
+    background-color: #fff;
   }
 }
 
