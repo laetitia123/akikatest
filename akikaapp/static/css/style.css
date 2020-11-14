@@ -1052,12 +1052,23 @@ h6 {
   padding: 80px 0;
   background:#f5f8fd;
 }
+#pricing .card h4{
+  text-align:center;
+
+}
+#pricing .card p{
+  margin-left:10px;
+}
+#pricing .card a{
+  margin-left: 20px;
+}
 
 #pricing .card {
   border: 0;
   border-radius: 0px;
   box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
   transition: all .3s ease-in-out;
+  padding: 36px 0;
   position: relative;
 }
 
