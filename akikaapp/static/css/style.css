@@ -1223,12 +1223,12 @@ transition: all .2s ease-in-out;
 #footer {
   padding: 0 0 30px 0;
   font-size: 14px;
-  background: black;
+  /* background: black; */
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: black;
+  /* background: black; */
 }
 
 #footer .footer-top .footer-info {
