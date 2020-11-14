@@ -930,6 +930,7 @@ h6 {
 
 #team {
   padding: 60px 0;
+  background:#f5f8fd;
 }
 
 #team .member {
@@ -1049,7 +1050,7 @@ h6 {
 
 #pricing {
   padding: 80px 0;
-  background: #f27939;
+  background:#f5f8fd;
 }
 
 #pricing .card {
