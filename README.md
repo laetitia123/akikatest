@@ -39,7 +39,8 @@ This project will help users to view mews and uopdate about coronavirus
 
 https://akikatest.herokuapp.com/
 
-
+## demo 
+https://drive.google.com/file/d/1f3xMzjyXTPfQ3UReXZqadvHQ7360LtQE/view
 
 ## Author
 
