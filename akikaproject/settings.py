@@ -137,17 +137,27 @@ CHANNEL_LAYERS = {
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'akika',
+#         'USER': 'laetitia',
+#         'PASSWORD': 'cool',
+    
+#     }
+# }
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'd26706lb3uqrkn',
-        'HOST':'ec2-52-44-235-121.compute-1.amazonaws.com',
-        'PORT':'5432'
         'USER': 'kizbkxftbkebbn',
         'PASSWORD': 'e6a787f881468700cd7b349a67c19fa16ab547dbaa70b5ebc66e3321a46a44ae',
+        'PORT':'5432',
+        'HOST':'ec2-52-44-235-121.compute-1.amazonaws.com'
+    
     }
 }
-postgres://kizbkxftbkebbn:e6a787f881468700cd7b349a67c19fa16ab547dbaa70b5ebc66e3321a46a44ae@ec2-52-44-235-121.compute-1.amazonaws.com:5432/d26706lb3uqrknpostgres://kizbkxftbkebbn:e6a787f881468700cd7b349a67c19fa16ab547dbaa70b5ebc66e3321a46a44ae@ec2-52-44-235-121.compute-1.amazonaws.com:5432/d26706lb3uqrkn
+# postgres://kizbkxftbkebbn:e6a787f881468700cd7b349a67c19fa16ab547dbaa70b5ebc66e3321a46a44ae@ec2-52-44-235-121.compute-1.amazonaws.com:5432/d26706lb3uqrkn
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
